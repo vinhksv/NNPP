@@ -52,15 +52,26 @@ class HomePage extends StatelessWidget {
                   SizedBox(
                     width: 20,
                   ),
+                  Spacer(),
                   Text('Hello world'),
                 ],
               ),
               RaisedButton(
                 onPressed: () {},
-                child: Text('click me'),
+                child: Row(
+                  children: <Widget>[
+                    Icon(Icons.accessibility_new),
+                    Text('click me'),
+                  ],
+                ),
                 
               ),
-              FlatButton(onPressed: (){},child: Icon(Icons.access_time, size: 50,color: Colors.red,),)
+              FlatButton(onPressed: (){},child: Row(
+                children: <Widget>[
+                  Icon(Icons.access_time, size: 50,color: Colors.red,),
+                  Text('hello'),
+                ],
+              ),)
               
             ],
           ),
