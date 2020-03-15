@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sfd/ui/text.dart';
 
 class TextFieldPage extends StatefulWidget {
   @override
@@ -34,8 +35,13 @@ class _TextFieldPageState extends State<TextFieldPage> {
                   InputDecoration(hintText: 'Password', labelText: 'Password'),
             ),
             RaisedButton(
-              onPressed: () {},
               child: Text('Login'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HomePage()),
+                );
+              },
             ),
           ],
         ),

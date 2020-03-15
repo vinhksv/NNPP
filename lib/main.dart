@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:sfd/ui/text.dart';
+import 'package:sfd/ui/login_page.dart';
+
+
+
+
+
 
 void main() => runApp(MyApp());
 
@@ -12,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: HomePage(),
+      home: LoginPage(),
       debugShowCheckedModeBanner: false,
     );
   }

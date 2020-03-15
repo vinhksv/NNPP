@@ -6,8 +6,22 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(
+              Icons.search,
+              color: Colors.blue,
+              size: 20,
+            ),
+            onPressed: () {},
+            
+          ),
+          IconButton(
+            icon: Icon(Icons.shopping_cart,color: Colors.blue,size: 20,),
+            onPressed: () {},)
+        ],
         title: Text(
-          'Hello word my first App',
+          'HomePage Facebook',
           style: TextStyle(
             fontSize: 40,
             color: Color.fromARGB(255, 241, 196, 15),
@@ -36,25 +50,24 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               Row(
                 children: <Widget>[
-                  Text('Hello world'),
+                  Image.asset(
+                    'images/user.png',
+                    height: 50,
+                    width: 50,
+                  ),
+                  Text('khonesavanh'),
                   SizedBox(
                     width: 20,
                   ),
-                  Text('Hello world'),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  Text('Hello world'),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  Text('Hello world'),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  Spacer(),
-                  Text('Hello world'),
+
+                  // Spacer(),
+                  // Text('Hello world'),
                 ],
+              ),
+              Image.asset(
+                'images/io.jpg',
+                height: 200,
+                width: 200,
               ),
               RaisedButton(
                 onPressed: () {},
@@ -64,15 +77,20 @@ class HomePage extends StatelessWidget {
                     Text('click me'),
                   ],
                 ),
-                
               ),
-              FlatButton(onPressed: (){},child: Row(
-                children: <Widget>[
-                  Icon(Icons.access_time, size: 50,color: Colors.red,),
-                  Text('hello'),
-                ],
-              ),)
-              
+              FlatButton(
+                onPressed: () {},
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.access_time,
+                      size: 50,
+                      color: Colors.red,
+                    ),
+                    Text('hello'),
+                  ],
+                ),
+              )
             ],
           ),
         ),
